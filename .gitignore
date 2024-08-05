@@ -1,0 +1,93 @@
+# Java 관련
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+*.log
+*.javadoc
+
+# IntelliJ IDEA 관련
+/.idea/
+/.idea/*
+*.iml
+*.iws
+*.ipr
+out/
+*.class
+*.jar
+*.log
+*.swp
+*.swo
+*~
+/target/
+/build/
+
+# Eclipse 관련
+.metadata/
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+/.buildpath
+/.project
+/.settings/
+/bin/
+/tmp/
+/.target
+.factorypath
+
+# Maven 관련
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle 관련
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# 배포 관련
+*.war
+*.ear
+
+# 특정 운영체제 관련
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+# Konqueror directory preferences
+.directory
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# 기타
+*.class
+*.project
+*.classpath
+*.settings/
+*.factorypath
+
+# 빌드 디렉토리
+/build/
