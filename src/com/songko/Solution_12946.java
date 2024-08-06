@@ -12,16 +12,6 @@ import com.songko.common.TestInterface;
  */
 public class Solution_12946 implements TestInterface {
 
-    class Move {
-        private int from;
-        private int to;
-
-        public Move(int from, int to) {
-            this.from = from;
-            this.to = to;
-        }
-    }
-
     class Pilla {
         private int n;
         private int[] myDisc = new int[16]; // 인덱스 : 1 ~ 15 사용.
