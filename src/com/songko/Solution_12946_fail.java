@@ -9,11 +9,9 @@ import java.util.stream.Collectors;
 /**
  * 하노이의 탑
  * https://school.programmers.co.kr/learn/courses/30/lessons/12946
- * <p>
- * 22:40 ~
- * 시간 분, 회차 통과
+ * - 자력 해결 실패. 알고리즘 원리 확인 후 작성으로 처리.
  */
-public class Solution_12946_2 implements TestInterface {
+public class Solution_12946_fail implements TestInterface {
 
     int discNum;
     Stack<Integer>[] pillar = new Stack[3];
