@@ -3,7 +3,7 @@ package com.songko;
 import java.lang.reflect.Method;
 
 public class Main {
-    public static final String PROB_NUM = "67257";
+    public static final String PROB_NUM = "99999";
 
     public static void main(String[] args) {
         // 동적으로 클래스 이름을 생성

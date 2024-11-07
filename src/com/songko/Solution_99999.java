@@ -4,37 +4,31 @@ import com.songko.common.Log;
 import com.songko.common.TestInterface;
 
 public class Solution_99999 implements TestInterface {
-    String[] oprs = new String[]{"1", "2", "3"};
-
-    public long solution() {
-
-        for(int i =0; i < oprs.length; i++ {
-            solve( 0);
-        }
 
 
-        long answer = 0;
-        return answer;
-    }
+    public void solution(String result, String[] oprs, Boolean[] visited) {
 
-    public long solve(int opsIdx) {
+        for (int i = 0; i < oprs.length; i++) {
+            if (visited[i]) continue;
+            visited[i] = true;
+            result = result.concat(oprs[i]);
 
-        if (expression.contains(ops[opsIdx])) {
-            String[] splited = expression.split(regex[opsIdx]);
-            Log.print(splited);
+            solution(result, oprs, visited);
 
-            if(splited.length == 2) {
-                calc(splited[0], splited[1])
+            if (result.length() > oprs.length - 1) {
+                Log.print(result);
+                visited[i] = false;
+                result = result.substring(0, result.length());
+                return;
             }
 
-            for (String ex : splited) {
-                result += solve(ex, ((opsIdx + 1) % 3), result);
+            visited[i] = false;
+            result = result.substring(0, result.length());
 
-            }
         }
 
-        return Long.valueOf(expression);
     }
+
 
     @Override
     public void init() {
@@ -44,8 +38,14 @@ public class Solution_99999 implements TestInterface {
     @Override
     public void test() {
         // 60420
-        long solv1 = solution();
-        Log.print(solv1);
+        String[] oprs = new String[]{"1", "2"};
+        Boolean[] visited = new Boolean[oprs.length];
+        for (int i = 0; i < oprs.length; i++) {
+            visited[i] = false;
+        }
+
+        solution("", oprs, visited);
+
 
         // 300
 //        String tc2 = "50*6-3*2";
